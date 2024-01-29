@@ -3,18 +3,20 @@
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
+    "start": "expo start --dev-client",
+    "android": "expo run:android",
+    "ios": "npx expo run:ios",
     "web": "expo start --web"
   },
   "dependencies": {
+    "eas": "^0.1.0",
     "expo": "~50.0.4",
     "expo-status-bar": "~1.11.1",
     "react": "18.2.0",
     "react-native": "0.73.2"
   },
   "devDependencies": {
+    "expo-dev-client": "~3.3.7",
     "@babel/core": "^7.20.0"
   },
   "private": true
